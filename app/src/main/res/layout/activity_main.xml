@@ -51,7 +51,7 @@
             android:textSize="10dp"/>
 
         <RadioButton
-            android:id="@+id/rdb_ziliao"
+            android:id="@+id/rdb_course_table"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:textColor="#aba9a9"
             android:textSize="10dp"/>
         <RadioButton
-            android:id="@+id/rdb_add"
+            android:id="@+id/rdb_shorp"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -74,7 +74,7 @@
             android:textSize="10dp"/>
 
         <RadioButton
-            android:id="@+id/rdb_xuanshang"
+            android:id="@+id/rdb_report"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -86,7 +86,7 @@
             android:textSize="10dp"/>
 
         <RadioButton
-            android:id="@+id/rdb_personal"
+            android:id="@+id/rdb_school_life"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
