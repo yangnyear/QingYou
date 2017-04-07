@@ -22,6 +22,7 @@ public class SchoolRecyclerViewAdapter extends RecyclerView.Adapter<SchoolRecycl
     private MyItemClickListener mClickListener;
     private MyItemLongClickListener mLongClickListener;
     private List<SchoolLifeEntity> mSchoolLifeEntities;
+    private  View itemvIEW;
 
     public SchoolRecyclerViewAdapter(Context context, List<SchoolLifeEntity> schoolLifeEntities) {
         mContext = context;
@@ -31,7 +32,7 @@ public class SchoolRecyclerViewAdapter extends RecyclerView.Adapter<SchoolRecycl
 
     @Override
     public SchoolRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemvIEW = mInflater.inflate(R.layout.item_school_life, parent, false);
+         itemvIEW = mInflater.inflate(R.layout.item_school_life, parent, false);
         SchoolRecyclerViewHolder holder = new SchoolRecyclerViewHolder(itemvIEW, mClickListener, mLongClickListener);
         return holder;
     }

@@ -3,10 +3,178 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rcl_school_life"
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="4dp">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="168dp"
+        android:background="?attr/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/image_userlogo"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_image_swpu_logo"/>
+
+        <TextView
+            android:id="@+id/text_onew_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:text="西南石油大学"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_school_life_resource"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="资料共享"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+      android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:background="#cecdcd"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_school_life_buty"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="风云人物"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:background="#cecdcd"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_school_life_sports_filed"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="查看运动场"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:background="#cecdcd"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_school_life_food"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="美食推荐"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:background="#cecdcd"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_school_life_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="教师推荐"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="6dp"
+        android:background="#cecdcd"
+        android:layout_height="1dp"/>
 </LinearLayout>

@@ -12,11 +12,11 @@
     <item
         android:id="@+id/item_settimetonotificate"
         android:icon="@drawable/ic_abc_image_time"
-        android:title="定时提醒"/>
-    <!--<item-->
-        <!--android:id="@+id/item_layoutmood"-->
-        <!--android:icon="@drawable/ic_abc_image_"-->
-        <!--android:title="布局方式" />-->
+        android:title="学年缴费"/>
+    <item
+        android:id="@+id/item_layoutmood"
+        android:icon="@drawable/ic_abc_image_"
+        android:title="我的下载" />
 </group>
     <item android:title="其他">
         <menu>

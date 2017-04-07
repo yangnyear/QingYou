@@ -51,7 +51,7 @@ public class HomepageFragment extends Fragment implements MyItemClickListener,My
         mAdapter.setClickListener(this);
         mAdapter.setLongClickListener(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.setAdapter(mAdapter);
+//        mRecyclerView.setAdapter(mAdapter);
         //图片轮播
         if (banner != null)
             banner.setImageLoader(BannerLoader.getBannerLoader())

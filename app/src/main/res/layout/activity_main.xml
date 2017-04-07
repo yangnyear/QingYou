@@ -100,7 +100,7 @@
                 android:button="@null"
                 android:drawableTop="@drawable/personal_selecter"
                 android:gravity="center"
-                android:text="校花"
+                android:text="校园"
                 android:textColor="#aba9a9"
                 android:textSize="10dp"/>
         </RadioGroup>
