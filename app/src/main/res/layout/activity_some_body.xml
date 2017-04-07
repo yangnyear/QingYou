@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.swpuiot.qingyou.view.activity.SomeBodyActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_main"
+        android:id="@+id/toolbar_somebody"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimaryDark"
-        android:title="风云人物"
+        app:title="风云人物"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@android:style/ThemeOverlay.Material.Dark"
@@ -23,4 +24,4 @@
         android:layout_height="match_parent"
         android:padding="4dp">
     </android.support.v7.widget.RecyclerView>
-</RelativeLayout>
+</LinearLayout>

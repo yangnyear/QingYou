@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -45,9 +46,12 @@ public class SomeBodyActivity extends AppCompatActivity implements MyItemClickLi
         finish();
         return super.onOptionsItemSelected(item);
     }
+
     private void inite() {
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar_somebody));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         schoolRecyclerView = (RecyclerView) findViewById(R.id.rcl_school_life);
-        mSchoolLifeEntities=new ArrayList<>();
+        mSchoolLifeEntities = new ArrayList<>();
         mEntityList = EntityList.getEntityList();
         mLayoutManager = new LinearLayoutManager(this);
     }
