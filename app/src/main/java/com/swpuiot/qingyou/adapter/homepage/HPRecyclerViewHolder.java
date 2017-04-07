@@ -1,4 +1,4 @@
-package com.swpuiot.qingyou.adapter;
+package com.swpuiot.qingyou.adapter.homepage;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

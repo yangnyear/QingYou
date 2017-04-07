@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.swpuiot.qingyou.R;
-import com.swpuiot.qingyou.adapter.HPRecyclerViewAdapter;
+import com.swpuiot.qingyou.adapter.homepage.HPRecyclerViewAdapter;
 import com.swpuiot.qingyou.clicklistener.MyItemClickListener;
 import com.swpuiot.qingyou.clicklistener.MyItemLongClickListener;
 import com.swpuiot.qingyou.data.BannerLoader;
@@ -33,6 +33,7 @@ public class HomepageFragment extends Fragment implements MyItemClickListener,My
     private List<Integer> imageList;
     private HPRecyclerViewAdapter mAdapter;
     private LinearLayoutManager mLayoutManager;
+    private EntityList mEntityList;
     private Banner banner;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,10 +63,11 @@ public class HomepageFragment extends Fragment implements MyItemClickListener,My
     private void init(){
         banner = (Banner) mView.findViewById(R.id.banner);
         mRecyclerView= (RecyclerView) mView.findViewById(R.id.rcl_homepage_goods);
+        mEntityList=EntityList.getEntityList();
         mGoodsEntities=new ArrayList<>();
-        EntityList.getGoodsEntityList(mGoodsEntities);
+        mEntityList.getGoodsEntityList(mGoodsEntities);
         imageList=new ArrayList<>();
-        EntityList.getImages(imageList);
+        mEntityList.getImages(imageList);
         mAdapter=new HPRecyclerViewAdapter(getContext(),mGoodsEntities);
         mLayoutManager=new LinearLayoutManager(getContext());
     }

@@ -2,8 +2,11 @@ package com.swpuiot.qingyou.view.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.RadioGroup;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ShorpFragment mShorpFragment;
     private SchoolLifeFragment mSchoolLifeFragment;
     private FragmentManager mFragmentManager;
+    private DrawerLayout MDrawerLayout;
     private RadioGroup mRadioGroup;
 
     @Override
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar_main));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.abc_ic_menu_selectall_mtrl_alpha);
+        MDrawerLayout = (DrawerLayout) findViewById(R.id.dl_main_drawer);
 
         mHomepageFragment = new HomepageFragment();
         mCourseTableFragment = new CourseTableFragment();
@@ -66,6 +71,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                MDrawerLayout.openDrawer(GravityCompat.START);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.rdb_homepage:
@@ -79,10 +94,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.rdb_course_table:
                 mFragmentManager.beginTransaction()
                         .hide(mHomepageFragment)
-                        .hide(mCourseTableFragment)
+                        .hide(mSchoolLifeFragment)
                         .hide(mReportFragment)
                         .hide(mShorpFragment)
-                        .show(mSchoolLifeFragment).commit();
+                        .show(mCourseTableFragment).commit();
                 break;
             case R.id.rdb_shorp:
                 mFragmentManager.beginTransaction()
