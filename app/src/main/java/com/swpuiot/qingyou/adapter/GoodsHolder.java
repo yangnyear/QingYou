@@ -1,4 +1,4 @@
-package com.swpuiot.qingyou.adapter.homepage;
+package com.swpuiot.qingyou.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -13,7 +13,7 @@ import com.swpuiot.qingyou.clicklistener.MyItemLongClickListener;
  * Created by 羊荣毅_L on 2017/4/3.
  * ViewHolder of HomePage RecyclerView
  */
-public class HPRecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
+public class GoodsHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
    public ImageView goodsImage;
    public TextView goodsName;
    public TextView goodsWprth;
@@ -21,7 +21,7 @@ public class HPRecyclerViewHolder extends RecyclerView.ViewHolder implements Vie
    public MyItemClickListener mListener;
    public MyItemLongClickListener mLongClickListener;
 
-    public HPRecyclerViewHolder(View itemView, MyItemClickListener mListener, MyItemLongClickListener mLongClickListener) {
+    public GoodsHolder(View itemView, MyItemClickListener mListener, MyItemLongClickListener mLongClickListener) {
         super(itemView);
         goodsImage = (ImageView) itemView.findViewById(R.id.image_item_goods);
         goodsName = (TextView) itemView.findViewById(R.id.tt_item_name_goodsname);

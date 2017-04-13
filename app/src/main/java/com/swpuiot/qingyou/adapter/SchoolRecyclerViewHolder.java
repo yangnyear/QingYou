@@ -1,4 +1,4 @@
-package com.swpuiot.qingyou.adapter.schoollife;
+package com.swpuiot.qingyou.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

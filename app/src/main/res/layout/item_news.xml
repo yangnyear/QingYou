@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/ll_item_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tt_item_name_news"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:text="美军兵临城下 朝鲜紧急向这里求助但非中国"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tt_item_news_information"
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_height="36dp"
+                android:text="16666次浏览,1444条评论"
+                android:textColor="#939292"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tt_item_news_time"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:text="今天11.00"
+                android:textColor="#a1a1a1"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_news_logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/ic_image_junjian"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -11,7 +11,9 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RadioGroup;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.swpuiot.qingyou.R;
+import com.swpuiot.qingyou.data.EntityList;
 import com.swpuiot.qingyou.view.fragment.CourseTableFragment;
 import com.swpuiot.qingyou.view.fragment.HomepageFragment;
 import com.swpuiot.qingyou.view.fragment.ReportFragment;
@@ -27,11 +29,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FragmentManager mFragmentManager;
     private DrawerLayout MDrawerLayout;
     private RadioGroup mRadioGroup;
+    private EntityList mEntityList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+        Fresco.initialize(MainActivity.this);
         setContentView(R.layout.activity_main);
         inite();
     }
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .hide(mShorpFragment)
                 .show(mHomepageFragment).commit();
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

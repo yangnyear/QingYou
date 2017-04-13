@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.swpuiot.qingyou.R;
-import com.swpuiot.qingyou.adapter.homepage.HPRecyclerViewAdapter;
+import com.swpuiot.qingyou.adapter.GoodsAdapter;
 import com.swpuiot.qingyou.clicklistener.MyItemClickListener;
 import com.swpuiot.qingyou.clicklistener.MyItemLongClickListener;
 import com.swpuiot.qingyou.data.EntityList;
@@ -28,7 +28,7 @@ public class ShorpFragment extends Fragment implements MyItemClickListener,MyIte
     private RecyclerView goodsRecyclerView;
     private View mView;
     private List<GoodsEntity> mGoodsEntities;
-    private HPRecyclerViewAdapter mAdapter;
+    private GoodsAdapter mAdapter;
     private EntityList mEntityList;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class ShorpFragment extends Fragment implements MyItemClickListener,MyIte
         }
         inite();
         goodsRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter=new HPRecyclerViewAdapter(getContext(),mGoodsEntities);
+        mAdapter=new GoodsAdapter(getContext(),mGoodsEntities);
         goodsRecyclerView.setAdapter(mAdapter);
         mAdapter.setClickListener(this);
         mAdapter.setLongClickListener(this);

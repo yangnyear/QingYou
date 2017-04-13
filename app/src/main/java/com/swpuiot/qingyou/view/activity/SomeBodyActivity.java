@@ -11,7 +11,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.swpuiot.qingyou.R;
-import com.swpuiot.qingyou.adapter.schoollife.SchoolRecyclerViewAdapter;
+import com.swpuiot.qingyou.adapter.SchoolRecyclerViewAdapter;
 import com.swpuiot.qingyou.clicklistener.MyItemClickListener;
 import com.swpuiot.qingyou.clicklistener.MyItemLongClickListener;
 import com.swpuiot.qingyou.data.EntityList;
