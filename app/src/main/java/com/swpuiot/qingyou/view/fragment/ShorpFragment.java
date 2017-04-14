@@ -15,6 +15,7 @@ import com.swpuiot.qingyou.clicklistener.MyItemClickListener;
 import com.swpuiot.qingyou.clicklistener.MyItemLongClickListener;
 import com.swpuiot.qingyou.data.EntityList;
 import com.swpuiot.qingyou.entities.GoodsEntity;
+import com.swpuiot.qingyou.entities.GoodsHeadEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,7 @@ public class ShorpFragment extends Fragment implements MyItemClickListener,MyIte
     private RecyclerView goodsRecyclerView;
     private View mView;
     private List<GoodsEntity> mGoodsEntities;
+    private List<GoodsHeadEntity> mGoodsHeadEntities;
     private GoodsAdapter mAdapter;
     private EntityList mEntityList;
     @Override
@@ -44,7 +46,7 @@ public class ShorpFragment extends Fragment implements MyItemClickListener,MyIte
         }
         inite();
         goodsRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter=new GoodsAdapter(getContext(),mGoodsEntities);
+        mAdapter=new GoodsAdapter(getContext(),mGoodsEntities,mGoodsHeadEntities);
         goodsRecyclerView.setAdapter(mAdapter);
         mAdapter.setClickListener(this);
         mAdapter.setLongClickListener(this);
@@ -54,8 +56,10 @@ public class ShorpFragment extends Fragment implements MyItemClickListener,MyIte
         goodsRecyclerView= (RecyclerView) mView.findViewById(R.id.rcl_shorp_goods);
         mLayoutManager=new LinearLayoutManager(getContext());
         mGoodsEntities=new ArrayList<>();
+        mGoodsHeadEntities=new ArrayList<>();
         mEntityList=EntityList.getEntityList();
         mEntityList.getGoodsEntityList(mGoodsEntities);
+        mEntityList.getGoodsHeadList(mGoodsHeadEntities);
     }
 
     @Override

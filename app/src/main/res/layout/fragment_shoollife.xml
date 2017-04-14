@@ -147,7 +147,45 @@
         android:layout_marginLeft="6dp"
         android:layout_marginRight="12dp"
         android:background="#e9e4e4"/>
+    <LinearLayout
+        android:id="@+id/ll_school_life_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="2dp">
 
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_image_text"
+            app:placeholderImage="@drawable/ic_image_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:text="查看图书馆"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/nubia_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:background="#e9e4e4"/>
     <LinearLayout
         android:id="@+id/ll_school_life_food"
         android:layout_width="match_parent"
@@ -227,4 +265,5 @@
         android:layout_marginLeft="6dp"
         android:layout_marginRight="12dp"
         android:background="#e9e4e4"/>
+
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.swpuiot.qingyou.data;
 
 import com.swpuiot.qingyou.R;
 import com.swpuiot.qingyou.entities.GoodsEntity;
+import com.swpuiot.qingyou.entities.GoodsHeadEntity;
 import com.swpuiot.qingyou.entities.NewsEntity;
 import com.swpuiot.qingyou.entities.SchoolLifeEntity;
 
@@ -39,18 +40,19 @@ public class EntityList {
 
     public void getNews(List<NewsEntity> newsEntities) {
         if (newsEntities.size() == 0) {
-    newsEntities.add(new NewsEntity("美军兵临城下 朝鲜紧急向这里求助但非中国","16666次浏览,1444条评论","今天11.00",R.drawable.ic_image_junjian));
-    newsEntities.add(new NewsEntity("第五届中国电子信息博览会: 我国人工智能技术走在世界前列","16666次浏览,1444条评论","今天11.00",R.drawable.ic_image_jiqiren));
-    newsEntities.add(new NewsEntity("【媒体石大】教育导报大篇幅报道我校思政教育改革","16666次浏览,1444条评论","今天11.00",R.drawable.ic_image_zhuanjia));
-    newsEntities.add(new NewsEntity("冬去春来,西柚角落桃李芳芳","16666次浏览,1444条评论","今天11.00",R.drawable.ic_image_taohua));
-    newsEntities.add(new NewsEntity("【媒体石大】西柚学子全面发展素质皎月,音乐节闪亮登场","16666次浏览,1444条评论","今天11.00",R.drawable.ic_image_musicboy));
+            newsEntities.add(new NewsEntity("美军兵临城下 朝鲜紧急向这里求助但非中国", "16666次浏览,1444条评论", "今天11.00", R.drawable.ic_image_junjian));
+            newsEntities.add(new NewsEntity("第五届中国电子信息博览会: 我国人工智能技术走在世界前列", "16666次浏览,1444条评论", "今天11.00", R.drawable.ic_image_jiqiren));
+            newsEntities.add(new NewsEntity("【媒体石大】教育导报大篇幅报道我校思政教育改革", "16666次浏览,1444条评论", "今天11.00", R.drawable.ic_image_zhuanjia));
+            newsEntities.add(new NewsEntity("冬去春来,西柚角落桃李芳芳", "16666次浏览,1444条评论", "今天11.00", R.drawable.ic_image_taohua));
+            newsEntities.add(new NewsEntity("【媒体石大】西柚学子全面发展素质皎月,音乐节闪亮登场", "16666次浏览,1444条评论", "今天11.00", R.drawable.ic_image_musicboy));
         }
     }
 
     public void getImages(List<Integer> imageList) {
         if (imageList.size() == 0) {
-            imageList.add(R.drawable.ic_abc_image_turn4);
-            imageList.add(R.drawable.ic_abc_image_turn7);
+            imageList.add(R.drawable.ic_image_homepage1);
+            imageList.add(R.drawable.ic_image_homepage2);
+            imageList.add(R.drawable.ic_image_homepage3);
         }
     }
 
@@ -68,5 +70,12 @@ public class EntityList {
             schoolLifeEntities.add(new SchoolLifeEntity("佐良娜", "幻术", "保密", "写轮眼", "我多想拥抱你,可惜时光之里三南水北,可惜你我之间人海如潮:", R.drawable.ic_abc_image_dslogo));
 
         }
+    }
+
+    public void getGoodsHeadList(List<GoodsHeadEntity> goodsHeadList) {
+        if (goodsHeadList.size() == 0)
+            for (int i = 0; i < 10; i++) {
+                goodsHeadList.add(new GoodsHeadEntity(R.drawable.ic_image_my_logo, "今天7.00", "得成比目何辞死,愿作鸳鸯不羡仙", R.drawable.ic_image_taohua));
+            }
     }
 }
